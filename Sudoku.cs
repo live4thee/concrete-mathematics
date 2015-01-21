@@ -305,7 +305,7 @@ namespace Sudoku
 
     static class Puzzles
     {
-        private static int[,] p0 = new int[9, 9]
+        private static readonly int[,] p0 = new int[9, 9]
             {
                 { 0, 6, 0, 5, 0, 0, 0, 0, 0},
                 { 4, 5, 7, 0, 0, 0, 0, 8, 0},
@@ -318,7 +318,7 @@ namespace Sudoku
                 { 6, 0, 5, 0, 0, 8, 1, 0, 4},
             };
 
-        private static int[,] p1 = new int[9, 9]
+        private static readonly int[,] p1 = new int[9, 9]
             {
                 { 0, 1, 4, 2, 7, 0, 0, 8, 0},
                 { 0, 0, 8, 6, 0, 0, 0, 3, 0},
@@ -331,7 +331,7 @@ namespace Sudoku
                 { 0, 0, 0, 0, 0, 0, 9, 0, 0},
             };
 
-        private static int[,] p2 = new int[9, 9]
+        private static readonly int[,] p2 = new int[9, 9]
             {
                 { 0, 0, 0, 0, 0, 0, 4, 5, 6},
                 { 0, 0, 0, 0, 0, 0, 0, 0, 0},
@@ -344,7 +344,7 @@ namespace Sudoku
                 { 0, 2, 0, 8, 0, 0, 0, 0, 1},
             };
 
-        public static int[][,] puzzles = { p0, p1, p2 };
+        public static readonly int[][,] puzzles = { p0, p1, p2 };
     }
 
     class Program
